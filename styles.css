@@ -16,12 +16,13 @@
 }
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
   background-color: var(--clr-bg);
   color: #fff;
   padding: 2rem 1.5rem 2rem 1.5rem;
@@ -110,7 +111,7 @@ nav {
   height: 100%;
   background: var(--clr-bg);
   z-index: 1;
-  transition: left ease-in-out 0.25s;
+  transition: left ease-in 0.25s;
 }
 
 nav.open {
@@ -201,7 +202,7 @@ nav.open {
 
 footer {
   margin-top: auto;
-  padding: 10rem 0rem 2.4rem;
+  padding:2.4rem 0 2.4rem;
 }
 
 .footer-text {
@@ -216,15 +217,15 @@ footer {
   }
   main {
     display: flex;
-    justify-content: space-between;
+    column-gap: 5rem;
     align-items: center;
     margin-top: 15rem;
   }
   .left {
-    flex: 4;
+    flex: 1;
   }
   .right {
-    flex: 6;
+    flex: 1;
   }
   .hamburger{
     display: none;
